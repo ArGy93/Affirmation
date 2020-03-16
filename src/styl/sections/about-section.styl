@@ -1,0 +1,115 @@
+.about-section {
+  position: relative;
+  padding-top: pixelToOtherUnit(83, vw);
+  padding-bottom: pixelToOtherUnit(143, vw);
+  .bg-feature {
+    position: absolute;
+    &.first {
+      top: 37%;
+      left: 50%;
+      transform: translateX(-40%);
+      width: pixelToOtherUnit(210, vw);
+      height: pixelToOtherUnit(210, vw);
+      background-image: url(../img/svg/bg-feature-1.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &.second {
+      top: 6%;
+      left: 18.5%;
+      width: pixelToOtherUnit(115, vw);
+      height: pixelToOtherUnit(115, vw);
+      background-image: url(../img/svg/bg-feature-1.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &.third {
+      top: 73%;
+      left: 69.8%;
+      width: pixelToOtherUnit(90, vw);
+      height: pixelToOtherUnit(90, vw);
+      background-image: url(../img/svg/bg-feature-1.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &.fourth {
+      top: 74%;
+      left: 13.5%;
+      width: pixelToOtherUnit(105, vw);
+      height: pixelToOtherUnit(105, vw);
+      background-image: url(../img/svg/plus.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: rotate(15deg);
+    }
+    &.fifth {
+      top: 3%;
+      left: 76.4%;
+      width: pixelToOtherUnit(60, vw);
+      height: pixelToOtherUnit(60, vw);
+      background-image: url(../img/svg/plus.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: rotate(45deg);
+    }
+  }
+  .video {
+    outline: 0;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: pixelToOtherUnit(570, vw);
+    height: pixelToOtherUnit(380, vw);
+    margin-left: pixelToOtherUnit(30, vw);
+    border-radius: 22px;
+    overflow: hidden;
+    #player {
+      outline: 0;
+      border: 0;
+    }
+    .video-bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url(../img/video-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        width: pixelToOtherUnit(100, vw);
+        height: pixelToOtherUnit(100, vw);
+        background-color: transparent;
+        background-image: url(../img/svg/play.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &:hover {
+      .video-bg {
+        &::before {
+          transform: translate(-50%, -50%) scale(1.2);
+        }
+      }
+    }
+  }
+  .info {
+    position: relative;
+    display: inline-block;
+    width: pixelToOtherUnit(500, vw);
+    margin-left: pixelToOtherUnit(50, vw);
+    h2 {
+      margin-bottom: pixelToOtherUnit(25, vw);
+    }
+    p {
+      width: pixelToOtherUnit(460, vw);
+      line-height: pixelToOtherUnit(28, vw);
+    }
+  }
+}

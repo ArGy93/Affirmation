@@ -1,0 +1,43 @@
+.main-section {
+  padding-top: 9.8%;
+  padding-bottom: 14.1%;
+  background-image: url(../img/main-section-bg-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    position: relative;
+  }
+  h1 {
+    display: block;
+    width: pixelToOtherUnit(560, vw);
+    padding-left: pixelToOtherUnit(8, vw);
+    line-height: pixelToOtherUnit(72, vw);
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  .subtitle {
+    margin-top: 1.6%;
+    padding-left: pixelToOtherUnit(8, vw);
+    color: #fff;
+  }
+  .btn-group {
+    margin-top: pixelToOtherUnit(32, vw);
+    .btn {
+      &.app-store {
+        margin-left: pixelToOtherUnit(10, vw);
+      }
+      &.google-play {
+        margin-left: pixelToOtherUnit(15, vw);
+      }
+    }
+  }
+  .feature-box {
+    position: absolute;
+    top: pixelToOtherUnit(-150, vw);
+    right: pixelToOtherUnit(-59, vw);
+    width: pixelToOtherUnit(572, vw);
+    .feature {
+      width: 100%;
+    }
+  }
+}

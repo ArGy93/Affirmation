@@ -1,0 +1,21 @@
+.main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color #343434;
+  span {
+    position: relative;
+    display: block;
+    margin-left: 35px;
+    font-size: 18px;
+    color: #fff;
+    &:before {
+      content: "\00A9";
+      position: absolute;
+      top: 50%;
+      left: -18px;
+      transform: translateY(-50%);
+    }
+  }
+}

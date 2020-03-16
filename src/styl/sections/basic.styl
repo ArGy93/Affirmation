@@ -1,0 +1,44 @@
+.basic-section {
+  padding-top: pixelToOtherUnit(180, vw);
+  padding-bottom: pixelToOtherUnit(185, vw);
+  background-image: url(../img/basic-section-bg-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    position: relative;
+  }
+  .info {
+    margin-left: pixelToOtherUnit(165, vw);
+    h2 {
+      color: #fff;
+    }
+    .subtitle {
+      margin-top: pixelToOtherUnit(8, vw);
+      margin-bottom: pixelToOtherUnit(30, vw);
+      color: #fff;
+    }
+    p {
+      width: pixelToOtherUnit(450, vw);
+      line-height: pixelToOtherUnit(28, vw);
+      span {
+        font-weight: bold;
+      }
+      &.pd {
+        padding-top: pixelToOtherUnit(12, vw);
+        padding-bottom: pixelToOtherUnit(9, vw);
+      }
+    }
+    .btn-default {
+      margin-top: pixelToOtherUnit(32, vw);
+    }
+  }
+  .feature-box {
+    position: absolute;
+    top: pixelToOtherUnit(-125, vw);
+    right: pixelToOtherUnit(188, vw);
+    width: pixelToOtherUnit(291, vw);
+    .feature {
+      width: 100%;
+    }
+  }
+}

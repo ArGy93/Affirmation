@@ -1,0 +1,80 @@
+.faq-section {
+  padding-top: pixelToOtherUnit(54, vw);
+  padding-bottom: pixelToOtherUnit(107, vw);
+  h2 {
+    padding-left: pixelToOtherUnit(12, vw);
+    padding-bottom: pixelToOtherUnit(29, vw);
+    text-align: center;
+  }
+  .accordeon {
+    margin-left: pixelToOtherUnit(92, vw);
+    margin-right: pixelToOtherUnit(77, vw);
+    .list-item {
+      text-align: left;
+      margin-bottom: pixelToOtherUnit(25, vw);
+      .list-title {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+  			position: relative;
+        height: pixelToOtherUnit(103, vw);
+        padding-left: pixelToOtherUnit(32, vw);
+        padding-right: pixelToOtherUnit(200, vw);
+        border-bottom: 2px solid #9a44ba;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 25px;
+        line-height: pixelToOtherUnit(28, vw);
+        font-size: pixelToOtherUnit(24, vw);
+  			color: #fff;
+        background-image: -moz-linear-gradient( 180deg, #ff7cdc 0%, #d78bf1 100%);
+        background-image: -webkit-linear-gradient( 180deg, #ff7cdc 0%, #d78bf1 100%);
+        background-image: -ms-linear-gradient( 180deg, #ff7cdc 0%, #d78bf1 100%);
+        box-shadow: 0px 2px 0px 0px rgba(154, 68, 186, 0.004);
+  			transition: all 0.5s ease;
+        &::after {
+  		    content: "";
+  		    position: absolute;
+  		    top: 43%;
+          right: 4.6%;
+          width: pixelToOtherUnit(30, vw);
+  		    height: pixelToOtherUnit(30, vw);
+          border-width: pixelToOtherUnit(2, vw);
+          border-style: solid;
+          border-color: #fff;
+          border-right: none;
+          border-bottom: none;
+          transform: translateY(-50%) rotate(-135deg);
+  		    transition: transform 0.4s ease-out;
+  			}
+      }
+      .list-info {
+        display: none;
+        margin-left: pixelToOtherUnit(40, vw);
+        margin-right: pixelToOtherUnit(40, vw);
+        padding-top: pixelToOtherUnit(25, vw);
+        padding-bottom: pixelToOtherUnit(25, vw);
+        padding-left: pixelToOtherUnit(30, vw);
+        padding-right: pixelToOtherUnit(30, vw);
+        line-height: pixelToOtherUnit(28, vw);
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-color #F5F5F5;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+      }
+      &.active {
+        .list-title {
+          background-image: -moz-linear-gradient( 0deg, #ff7cdc 0%, #d78bf1 100%);
+          background-image: -webkit-linear-gradient( 0deg, #ff7cdc 0%, #d78bf1 100%);
+          background-image: -ms-linear-gradient( 0deg, #ff7cdc 0%, #d78bf1 100%);
+          &:after {
+            transform: translateY(22%) rotate(45deg);
+          }
+        }
+        .list-info {
+          display: block;
+        }
+      }
+    }
+  }
+}

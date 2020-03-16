@@ -1,0 +1,121 @@
+.constructor-section {
+  position: relative;
+  padding-top: pixelToOtherUnit(55, vw);
+  padding-bottom: pixelToOtherUnit(62, vw);
+  .bg-feature {
+    position: absolute;
+    top: 30%;
+    left: 39%;
+    width: pixelToOtherUnit(430, vw);
+    height: pixelToOtherUnit(430, vw);
+    background-image: url(../img/constructor-section-feature.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h2 {
+    text-align: center;
+    margin-left: pixelToOtherUnit(20, vw);
+  }
+  .subtitle {
+    display: flex;
+    width: pixelToOtherUnit(525, vw);
+    margin: 0 auto;
+    padding-top: pixelToOtherUnit(7, vw);
+    padding-left: pixelToOtherUnit(13, vw);
+    text-align: center;
+    &.mod {
+      width: pixelToOtherUnit(650, vw);
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: pixelToOtherUnit(18, vw);
+    .icon-block {
+      margin-top: pixelToOtherUnit(119, vw);
+      &.first {
+        .icon-box {
+          align-items: flex-end;
+          padding-right: pixelToOtherUnit(73, vw);
+          &.shift {
+            transform: translateX(-16%);
+          }
+        }
+      }
+      &.second {
+        .icon-box {
+          align-items: flex-start;
+          padding-left: pixelToOtherUnit(73, vw);
+          &.shift {
+            transform: translateX(16%);
+          }
+        }
+      }
+      .icon-box {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: pixelToOtherUnit(30, vw);
+        span {
+          display: block;
+        }
+        .label {
+          padding-top: pixelToOtherUnit(5, vw);
+          line-height: pixelToOtherUnit(28, vw);
+          font-size: pixelToOtherUnit(20, vw);
+        }
+        .icon {
+          width: pixelToOtherUnit(50, vw);
+          height: pixelToOtherUnit(50, vw);
+          &.first {
+            background-image: url(../img/constructor-icon-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          &.second {
+            background-image: url(../img/constructor-icon-2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          &.third {
+            background-image: url(../img/constructor-icon-3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          &.fourth {
+            background-image: url(../img/constructor-icon-4.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          &.fifth {
+            background-image: url(../img/constructor-icon-5.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          &.sixth {
+            background-image: url(../img/constructor-icon-6.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          &.seventh {
+            background-image: url(../img/constructor-icon-7.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          &.eighth {
+            background-image: url(../img/constructor-icon-8.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+    .constructor-img {
+      position: relative;
+      margin-top: pixelToOtherUnit(35, vw);
+      width: pixelToOtherUnit(300, vw);
+      .feature {
+        width: 100%;
+      }
+    }
+  }
+}

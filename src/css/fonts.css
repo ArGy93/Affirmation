@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Avenir Next Demi';
+    src: url('../fonts/AvenirNext/AvenirNext-DemiBold.eot');
+    src: url('../fonts/AvenirNext/AvenirNext-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNext/AvenirNext-DemiBold.woff2') format('woff2'),
+        url('../fonts/AvenirNext/AvenirNext-DemiBold.woff') format('woff'),
+        url('../fonts/AvenirNext/AvenirNext-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../fonts/AvenirNext/AvenirNext-Regular.eot');
+    src: url('../fonts/AvenirNext/AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNext/AvenirNext-Regular.woff2') format('woff2'),
+        url('../fonts/AvenirNext/AvenirNext-Regular.woff') format('woff'),
+        url('../fonts/AvenirNext/AvenirNext-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNext/AvenirNextCyr-Demi.woff2') format('woff2'),
+        url('../fonts/AvenirNext/AvenirNextCyr-Demi.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNext/AvenirNextCyr-Regular.woff2') format('woff2'),
+        url('../fonts/AvenirNext/AvenirNextCyr-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNext/AvenirNextCyr-Bold.woff2') format('woff2'),
+        url('../fonts/AvenirNext/AvenirNextCyr-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+} */
